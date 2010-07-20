@@ -1,0 +1,15 @@
+Contract Rummy is a game my family knows through the ranks and was taught to us all by my Grandmother. I have a deep love for this game (or rather this verison of this game). My Girlfriend also has started playing more regularly and we enjoy playing Contract Rummy togeather.
+
+We have one problem however. We currently live over 200 miles away. While we visit each other almost every weekend our desire to play Contract Rummy has stemmed to almost a nightly basis.
+
+The result is this attempt to create a web based Contract Rummy system.
+
+About Contract Rummy
+
+I've never actually looked but there is apparently a lot of versions of Rummy. Even worse I came across and "official rules" document and found that the version of Contract Rummy differs in a few key areas. I don't see how this is possible as both my Grandmothers know how to play this version of Contract and both have never met.
+
+In this version of Contract Rummy you play with a double deck (removing the Jokers) and each player starts with seven cards. There are two notions of card groups. There is a "Set" and a "Run"
+
+A Set is a group consisting of three or more same value cards (IE: 3 Jacks, 3 Sevens, etc)
+
+A Run is a group consisting of four of more consecutive same-suit cards. Think of it as a "Straight Flush" from poker, only it's four (or more).

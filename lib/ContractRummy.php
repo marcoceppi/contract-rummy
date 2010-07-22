@@ -10,6 +10,13 @@ class ContractRummy extends Cards
 		parent::Cards( 2, 0 );
 	}
 	
+	/**
+	 * Add a "set" to the board
+	 * 
+	 * @param Card $set Accept a variable number of cards for a set - minimum 3
+	 * 
+	 * @return boolean
+	 */
 	function addSet( /* Variable Length */ )
 	{
 		$total_cards = func_num_args();
@@ -24,6 +31,13 @@ class ContractRummy extends Cards
 		}
 	}
 	
+	/**
+	 * Add a "run" to the board
+	 * 
+	 * @param Card $run Accept a variable number of cards for a run - minimum 4
+	 * 
+	 * @return boolean
+	 */
 	function addRun( /* Variable Length */ )
 	{
 		$total_cards = func_num_args();
@@ -38,11 +52,27 @@ class ContractRummy extends Cards
 		}
 	}
 	
+	/**
+	 * Add card(s) to a set on the board
+	 * 
+	 * @param int $set_key The key of the set for which the cards will be appended to
+	 * @param Card $cards Accept a variable number of cards to add to the set - minimum 1
+	 * 
+	 * @return boolean
+	 */
 	function addToSet( $set_id, $card )
 	{
 		
 	}
 	
+	/**
+	 * Add card(s) to a run on the board
+	 * 
+	 * @param int $run_key The key of the run for which the cards will be appended to
+	 * @param Card $cards Accept a variable number of cards to add to the run - minimum 1
+	 * 
+	 * @return boolean
+	 */
 	function addToRun( $run_id, $card )
 	{
 		

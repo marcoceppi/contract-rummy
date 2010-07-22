@@ -18,6 +18,25 @@ class ContractPlayer extends Player
 		parent::Player();
 	}
 	
+	function addSet( $set )
+	{
+		
+	}
+	
+	function addRun( $run )
+	{
+		
+	}
+	
+	function addToSet( $set_id, $card )
+	{
+		
+	}
+	
+	function addToRun( $run_id, $card )
+	{
+		
+	}
 }
 
 class Player

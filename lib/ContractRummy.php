@@ -60,7 +60,7 @@ class ContractRummy extends Cards
 	 * 
 	 * @return boolean
 	 */
-	function addToSet( $set_id, $card )
+	function addToSet( $set_key )
 	{
 		
 	}
@@ -73,7 +73,7 @@ class ContractRummy extends Cards
 	 * 
 	 * @return boolean
 	 */
-	function addToRun( $run_id, $card )
+	function addToRun( $run_key )
 	{
 		
 	}

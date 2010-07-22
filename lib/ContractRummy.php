@@ -2,8 +2,9 @@
 
 class ContractRummy extends Cards
 {
-	protected $sets = array();
-	protected $runs = array();
+	protected $sets  = array();
+	protected $runs  = array();
+	protected $board = array();
 	
 	function ContractRummy( $players = 2 )
 	{

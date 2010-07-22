@@ -24,9 +24,18 @@ class ContractRummy extends Cards
 		}
 	}
 	
-	function addRun( $run )
+	function addRun( /* Variable Length */ )
 	{
+		$total_cards = func_num_args();
 		
+		if( $total_cards < 4 )
+		{
+			return false;
+		}
+		else
+		{
+			// Check if all cards are of the same Suite and sequential
+		}
 	}
 	
 	function addToSet( $set_id, $card )

@@ -57,7 +57,7 @@ class Cards
 	{
 		if( $this->total() > 0 )
 		{
-			shuffle($this->deck);
+			shuffle($this->playing_deck);
 		}
 	}
 	
@@ -68,7 +68,7 @@ class Cards
 	 */
 	function deal()
 	{
-		return ($this->total() > 0) ? array_shift($this->deck) : false;
+		return ($this->total() > 0) ? array_shift($this->playing_deck) : false;
 	}
 	
 	/**
@@ -78,6 +78,6 @@ class Cards
 	 */
 	function total()
 	{
-		return count($this->deck);
+		return count($this->playing_deck);
 	}
 }

@@ -79,7 +79,7 @@ class ContractRummy extends Cards
 		
 	}
 	
-	function claimWildCard( )
+	function claimWildCard( $board_key, $card_index, $card )
 	{
 		// Swap a Wild Card on the board with it's representation
 	}

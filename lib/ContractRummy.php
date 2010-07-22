@@ -32,17 +32,14 @@ class Cards
 		$decks  = ( $decks < 1 ) ? 1 : $decks; // Lets not be silly now
 		$jokers = ( $jokers < 0 ) ? 0 : $jokers; // Really now - no negatives
 		
-		$faces_total = count($faces) + $jokers;
-		$deck_total  = $faces_total * count($suites);
-		
 		// Build the playing deck
 		for( $i = 0; $i < $decks; $i++ )
 		{
-			foreach( $faces as $face )
+			foreach( $this->faces as $face )
 			{
-				foreach( $suites as $suite )
+				foreach( $this->suites as $suite )
 				{
-					$this->playing_deck[] = array( "suite" => $suite, "face" => $face );
+					$this->playing_deck[] = array( "face" => $face, "suite" => $suite );
 				}
 			}
 		}

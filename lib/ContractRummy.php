@@ -16,6 +16,17 @@ class Cards
 	private $faces  = array("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K");
 	
 	protected $playing_deck = array();
+	
+	/**
+	 * Constructor for Cards
+	 * 
+	 * This will create the initial playing deck of cards
+	 * 
+	 * @param int $decks How many decks of cards to use. Must be greater than 0
+	 * @param int $jokers How many Jokers are found in a single "deck". Must be greater than 0
+	 * 
+	 * @return boolean
+	 */
 	function Cards( $decks = 1, $jokers = 0 )
 	{
 		$decks  = ( $decks < 1 ) ? 1 : $decks; // Lets not be silly now

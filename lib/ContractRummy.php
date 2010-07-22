@@ -46,7 +46,7 @@ class Cards
 	 */
 	function total()
 	{
-		
+		return count($this->deck);
 	}
 }
 

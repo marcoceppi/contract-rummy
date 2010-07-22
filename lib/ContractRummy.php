@@ -13,6 +13,8 @@ class ContractRummy extends Cards
 class Cards
 {
 	protected $deck = array();
+	private $suites = array("clubs", "diamonds", "spades", "hearts");
+	private $faces  = array("A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K");
 	
 	function Cards( $decks = 1, $jokers = 0 )
 	{

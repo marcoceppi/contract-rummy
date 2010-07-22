@@ -16,6 +16,24 @@ class Player
 	{
 		
 	}
+	
+	function getHand()
+	{
+		return $this->hand;
+	}
+	
+	function addToHand( $card )
+	{
+		if( !is_array($card) )
+		{
+			return false;
+		}
+		else
+		{
+			$this->hand[] = $card;
+			return true;
+		}
+	}
 }
 
 class Cards

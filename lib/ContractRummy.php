@@ -26,7 +26,10 @@ class Cards
 	 */
 	function shuffle()
 	{
-		
+		if( $this->total() > 0 )
+		{
+			shuffle($this->deck);
+		}
 	}
 	
 	/**

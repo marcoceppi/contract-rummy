@@ -54,11 +54,3 @@ class Cards
 		return count($this->deck);
 	}
 }
-
-class Card
-{
-	function Card()
-	{
-		
-	}
-}

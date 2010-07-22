@@ -35,11 +35,11 @@ class Cards
 	/**
 	 * Deal one card from top of the deck
 	 *
-	 * @return Card
+	 * @return Card|false
 	 */
 	function deal()
 	{
-	
+		return ($this->total() > 0) ? array_shift($this->deck) : false;
 	}
 	
 	/**

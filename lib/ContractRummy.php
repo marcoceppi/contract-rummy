@@ -77,6 +77,11 @@ class ContractRummy extends Cards
 	{
 		
 	}
+	
+	function claimWildCard( )
+	{
+		// Swap a Wild Card on the board with it's representation
+	}
 }
 
 class ContractPlayer extends Player

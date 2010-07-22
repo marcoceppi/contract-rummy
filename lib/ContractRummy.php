@@ -2,20 +2,12 @@
 
 class ContractRummy extends Cards
 {
-	function ContractRummy( $players = 2 )
-	{
-		parent::Cards( 2, 0 );
-	}
-}
-
-class ContractPlayer extends Player
-{
 	protected $sets = array();
 	protected $runs = array();
 	
-	function ContractPlayer()
+	function ContractRummy( $players = 2 )
 	{
-		parent::Player();
+		parent::Cards( 2, 0 );
 	}
 	
 	function addSet( $set )
@@ -36,6 +28,14 @@ class ContractPlayer extends Player
 	function addToRun( $run_id, $card )
 	{
 		
+	}
+}
+
+class ContractPlayer extends Player
+{
+	function ContractPlayer()
+	{
+		parent::Player();
 	}
 }
 

@@ -8,6 +8,18 @@ class ContractRummy extends Cards
 	}
 }
 
+class ContractPlayer extends Player
+{
+	protected $sets = array();
+	protected $runs = array();
+	
+	function ContractPlayer()
+	{
+		parent::Player();
+	}
+	
+}
+
 class Player
 {
 	protected $hand = array();

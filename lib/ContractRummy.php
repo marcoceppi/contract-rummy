@@ -33,9 +33,21 @@ class ContractRummy extends Cards
 
 class ContractPlayer extends Player
 {
+	private $contract_fulfilled = false;
+	
 	function ContractPlayer()
 	{
 		parent::Player();
+	}
+	
+	function metContract()
+	{
+		return $this->contract_fulfilled; 
+	}
+	
+	function fulfilledContract()
+	{
+		$this->contract_fulfilled = true;
 	}
 }
 

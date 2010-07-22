@@ -12,6 +12,8 @@ class ContractRummy extends Cards
 
 class Cards
 {
+	protected $deck = array();
+	
 	function Cards( $decks = 1, $jokers = 0 )
 	{
 	

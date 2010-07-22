@@ -4,9 +4,9 @@
 // Logic dictages Yes I do - though might not need it now.
 class ContractRummy extends Cards
 {
-	function ContractRummy( $players = 2)
+	function ContractRummy( $players = 2 )
 	{
-		
+		parent::Cards( 2, 0 );
 	}
 }
 

@@ -1,12 +1,20 @@
 <?php
 
-// Trying to figure out if I need a "Player" class or to contain in this class
-// Logic dictages Yes I do - though might not need it now.
 class ContractRummy extends Cards
 {
 	function ContractRummy( $players = 2 )
 	{
 		parent::Cards( 2, 0 );
+	}
+}
+
+class Player
+{
+	protected $hand = array();
+	
+	function Player()
+	{
+		
 	}
 }
 

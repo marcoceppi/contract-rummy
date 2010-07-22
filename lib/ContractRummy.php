@@ -10,9 +10,18 @@ class ContractRummy extends Cards
 		parent::Cards( 2, 0 );
 	}
 	
-	function addSet( $set )
+	function addSet( /* Variable Length */ )
 	{
+		$total_cards = func_num_args();
 		
+		if( $total_cards < 3 )
+		{
+			return false;
+		}
+		else
+		{
+			// Check if all cards are of the same Face
+		}
 	}
 	
 	function addRun( $run )
